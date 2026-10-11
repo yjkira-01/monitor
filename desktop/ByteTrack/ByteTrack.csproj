@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>ByteTrack</RootNamespace>
+    <AssemblyName>ByteTrack</AssemblyName>
+  </PropertyGroup>
+
+  <!-- NuGet package metadata -->
+  <PropertyGroup>
+    <PackageId>ByteTrack.NET</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Artur Buszka</Authors>
+    <Product>ByteTrack.NET</Product>
+    <Description>Unofficial C# (.NET 8) port of the ByteTrack (FoundationVision/ByteTrack) multi-object tracker core. Not affiliated with the original authors.</Description>
+    <Copyright>Copyright (c) 2021 Yifu Zhang (original); Copyright (c) 2026 Artur Buszka (port)</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/arturbuszka/ByteTrack.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/arturbuszka/ByteTrack.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>bytetrack;tracking;mot;multi-object-tracking;kalman;yolox;computer-vision</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- Public API is documented on the user-facing types; suppress warnings for
+         internal helper types (LinearAlgebra, Matching, KalmanFilter internals). -->
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+    <None Include="..\..\NOTICE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

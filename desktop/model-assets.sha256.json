@@ -1,0 +1,194 @@
+[
+  {
+    "file": "Assets\\AppIcon.ico",
+    "sha256": "6dadd8931051ac2c9e32036a58fc03d90531aae7b70bc70d723fd0a99beda775"
+  },
+  {
+    "file": "Assets\\AppIcon.png",
+    "sha256": "0af67df46aa9cb692d15db8a0bcd47fe7980ccfbb7f8eb376933c010c5880014"
+  },
+  {
+    "file": "Assets\\models.json",
+    "sha256": "aa5043c57f3481587eb11166fedfd2c29e4c1ec3c51096d484e13b361ba5628c"
+  },
+  {
+    "file": "Assets\\people.onnx",
+    "sha256": "98f113cb17fc2eac9c8155f4bdeadc0e41ec7eef73dcc015a1b78a838a4a5ffa"
+  },
+  {
+    "file": "Assets\\pose_landmarks_detector_full.onnx",
+    "sha256": "ae17ee8f076a5bbc28f65b939f46139c10f10c51ec4392a011e56d06d3f76c5d"
+  },
+  {
+    "file": "Assets\\pose_tcn.onnx",
+    "sha256": "9e863e063ff55ff60bc804fbbf1c1f637468821140dbed600dda277ac6b902ee"
+  },
+  {
+    "file": "Assets\\selfcheck.json",
+    "sha256": "d710a59b00559010ee83b247faedbb7de9bdbdcb93fa7f75e86972a223d9f30c"
+  },
+  {
+    "file": "Assets\\THIRD-PARTY-NOTICES.txt",
+    "sha256": "398feaca417193f28cc76fe90aef724ea9015dc92e407c59c513ed6287b4895e"
+  },
+  {
+    "file": "Assets\\vc-runtime-provenance.json",
+    "sha256": "043619059ce3c1eace4ee797d46ba7a46e90c645792ab22a23b0382c425c9370"
+  },
+  {
+    "file": "Assets\\video.onnx",
+    "sha256": "5ad159a3547d0e75b095bf402afd381a4ebbfbed19bdbce7e9797115a0476548"
+  },
+  {
+    "file": "Assets\\Binary\\gmd\\models.json",
+    "sha256": "f0b908eb14abe2b9e2c43df30dd4d4a42c9452fc9f922b1aa166f671849cc179"
+  },
+  {
+    "file": "Assets\\Binary\\gmd\\selfcheck.json",
+    "sha256": "4ad104cca66fde327d9de6fa400fadd4aa521fed32a71a190f5830c72d9667b5"
+  },
+  {
+    "file": "Assets\\Binary\\gmd\\video.onnx",
+    "sha256": "ba1549b1afe8ce70ff551e91409a6768717dc1e360a5d98e62c65d5313710ed3"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_alert_24_regular.svg",
+    "sha256": "3b56e93152bd74091bc59e77b453d69811ae4afce78b699d38ecc55d1810b7f6"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_arrow_clockwise_24_regular.svg",
+    "sha256": "488566eef8203823292a19660c47d4b9c86ca64e6910848342e6b5fa3c5a7558"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_arrow_download_24_regular.svg",
+    "sha256": "2749dfd0860188f7de7a573a634f3e37fe8ea4e99aa36fd1559e62d1a8243910"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_arrow_reset_24_regular.svg",
+    "sha256": "03ff2ad051f0b215f91b7fb1c9c0bb032dd7c8489ad37ab71f3aeedf73f8d470"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_checkmark_circle_24_regular.svg",
+    "sha256": "b3df75bf058b424fc56c8ec440672237051210017806404b8fecffee3d4253fc"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_chevron_down_24_regular.svg",
+    "sha256": "52b3569967dcd33b226bd19a7cb3bf1bf491dd22822c4c3a8d36f80cb6612ffa"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_delete_24_regular.svg",
+    "sha256": "0f0769b54d5862f2390ea7e51aab825e5dc10d4fa36da34d1559acc55799be92"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_dismiss_24_regular.svg",
+    "sha256": "f23a501be08e93ad334f1705be0c9e8224a8e7457bd884fe59263db1c6a4f3dc"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_document_text_24_regular.svg",
+    "sha256": "f76c2ec8378f3d0d2f6569b34ff54b7b3c3b7215a93745b92d4906aa882f84e5"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_edit_24_regular.svg",
+    "sha256": "2dae3a8425dbeb5ff15a0e1af84f5d15719fe62b012937a6a5457a1481804c73"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_folder_open_24_regular.svg",
+    "sha256": "d1a653db2d775144808d375b0f5c2a0b64db646e54e54283ecce1610882352c9"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_heart_pulse_24_filled.svg",
+    "sha256": "9b420a1388e55f8b3b0ba357026fed4a39c02b16c9f634fd4183fdefa5e22b79"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_pause_24_regular.svg",
+    "sha256": "c500f2b5d0e71a9fc29359887b9df17448111956f7bbe91ea52ad36b7a5a066f"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_people_24_regular.svg",
+    "sha256": "3e45c083154bba0c8b0978ed75788840a28c639afe5487dba6af33d16111761e"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_person_add_24_regular.svg",
+    "sha256": "dea6f23f3449c6b0bd635ebf17bc4d5fcb94fe06f56c1060aaf30c9964a40959"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_play_24_regular.svg",
+    "sha256": "5345128c168b3d238d40f90a185e7d47ac6f226db48898c3a938af11eb7e65e0"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_plug_connected_24_regular.svg",
+    "sha256": "5082c942dfb966a9d15f3eb9a0692157d9b48b1efbbe7e5cc7988305e3bce956"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_plug_disconnected_24_regular.svg",
+    "sha256": "0dc599297c473870b88bed65673bae2f860b227bf2b3565b252a4abbc55c4bee"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_pulse_24_regular.svg",
+    "sha256": "f6fee6e3c277f8e301d4060d93a51499bd4d3a902a6eb4eea324b563125af3ce"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_save_24_regular.svg",
+    "sha256": "35d473d8af5134ab3679d3f41e7270d6ac6bce66fc5f98caccb42d75350b237f"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_search_24_regular.svg",
+    "sha256": "dc8ec761e8cdc52032b86e15c424716ded96d168970b5b611257253a41484b62"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_settings_24_regular.svg",
+    "sha256": "5ac05e6e11c9ec9f24703091c42ca1f5c91f4032cb0eee35c892d1872a38871b"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_sparkle_24_regular.svg",
+    "sha256": "e50a6e9391a9da9a96f5378cd06645c7fe9c00bee9713d34c63f83983a3f6935"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_stop_24_regular.svg",
+    "sha256": "00dbf98c80cad5069f11311046585118b2f27fd622c84fb28eb90c5127bb760a"
+  },
+  {
+    "file": "Assets\\FluentIcons\\ic_fluent_video_24_regular.svg",
+    "sha256": "702ff830cd7f27e78026f437419ccab609e714514111e2ea89f19e6f33d33bb7"
+  },
+  {
+    "file": "Assets\\FluentIcons\\LICENSE.txt",
+    "sha256": "69bc45dc42b9acb96a69823adbc6ae538374e3c0bde169b855b32c48eaaef52f"
+  },
+  {
+    "file": "Assets\\FluentIcons\\sources.json",
+    "sha256": "f7e58d02f68075987f32d86ea0910fa60b866696e4aeecb800203ba1aca30f9f"
+  },
+  {
+    "file": "Assets\\Notices\\APACHE-2.0.txt",
+    "sha256": "313605fbac6945e9324d4825470796b5b7dbc012f523fdc181f6e6fd234eb88f"
+  },
+  {
+    "file": "Assets\\Notices\\OPEN-SOURCE-SOURCES.txt",
+    "sha256": "afa5450ce5728da1e904b0f0c2853a21eb9025a2235f8b909310514fb43ef32b"
+  },
+  {
+    "file": "Assets\\Notices\\ByteTrack\\LICENSE",
+    "sha256": "af7d8129b349cde4d9ce401d5a7d598103b2ca24627278a1fcd33a9a8918c940"
+  },
+  {
+    "file": "Assets\\Notices\\ByteTrack\\NOTICE",
+    "sha256": "7a03ca5d4dac97b0b6160c131c4621542b761e857d7cca6c71974ba686b58fc1"
+  },
+  {
+    "file": "Assets\\Notices\\ByteTrack\\provenance.json",
+    "sha256": "7c790c3146503c50b6f147aa517e216adfc9bf9b29b2e02d525c6132831e0d47"
+  },
+  {
+    "file": "Assets\\Realtime\\models.json",
+    "sha256": "5e0d08f5dea382ca09b1081ac8d82bb6d0bd7976f3d776723575f1effc27dc4d"
+  },
+  {
+    "file": "Assets\\Realtime\\rtmo.json",
+    "sha256": "b97bdedfd8cee404af2e3358b0c26559b04f8c699d5627441829de2b441ab2fe"
+  },
+  {
+    "file": "Assets\\Realtime\\rtmo.onnx",
+    "sha256": "750d872151ff4652f02c738efc3a547e112ce9b688fe920bc17f948e8c3afdac"
+  }
+]

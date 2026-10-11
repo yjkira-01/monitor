@@ -1,0 +1,14 @@
+ByteTrack.NET
+=============
+
+This project is an UNOFFICIAL C# / .NET port of ByteTrack and is not affiliated
+with or endorsed by the original authors.
+
+Original work:
+  ByteTrack: Multi-Object Tracking by Associating Every Detection Box
+  Copyright (c) 2021 Yifu Zhang
+  Licensed under the MIT License.
+  https://github.com/FoundationVision/ByteTrack
+
+The C# port is likewise distributed under the MIT License. See the LICENSE file
+for the full text and copyright notices.

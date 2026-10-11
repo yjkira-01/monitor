@@ -1,0 +1,7 @@
+# 云端已验证的训练环境，torch 与 torchvision 应使用匹配的官方 CUDA wheel。
+torch==2.5.1
+torchvision==0.20.1
+opencv-python-headless==4.11.0.86
+scipy>=1.11
+mediapipe==0.10.35
+opencv-contrib-python==4.11.0.86

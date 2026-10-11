@@ -1,0 +1,60 @@
+{
+  "video": {
+    "sha256": "ba1549b1afe8ce70ff551e91409a6768717dc1e360a5d98e62c65d5313710ed3",
+    "bytes": 132666465,
+    "max_errors": [
+      1.7881393432617188e-07,
+      2.86102294921875e-06,
+      1.7285346984863281e-06
+    ],
+    "input": [
+      1,
+      16,
+      128,
+      171,
+      3
+    ],
+    "outputs": [
+      "probabilities",
+      "embedding",
+      "attention"
+    ],
+    "classes": [
+      "adl",
+      "fall"
+    ],
+    "revision": "gmdcsa24_r3d18_100ep_inference",
+    "read_size": [
+      171,
+      128
+    ],
+    "low_light_trained": false,
+    "partial_body_trained": false,
+    "source_sha256": "8226e722fb9245af0976868e730ea0d00156f7c4472b554c4f915cd7a01349fd",
+    "acceptance": "saved_checkpoint_comparison",
+    "clinical_validated": false,
+    "training_metrics": {
+      "epoch": 4,
+      "train_acc": 1.0,
+      "train_loss": 0.0063995442739347135,
+      "lr": 8e-05,
+      "seconds": 0.666484285145998,
+      "val_acc": 0.9459459459459459,
+      "val_macro_f1": 0.9449404761904762,
+      "val_f1": 0.9375,
+      "fall_recall": 0.8823529411764706,
+      "fall_precision": 1.0,
+      "adl_recall": 1.0,
+      "confusion_matrix": [
+        [
+          20,
+          0
+        ],
+        [
+          2,
+          15
+        ]
+      ]
+    }
+  }
+}

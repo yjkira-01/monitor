@@ -1,0 +1,54 @@
+{
+  "version": "0.3.2",
+  "archive": "web-resources.zip",
+  "archiveSha256": "07f04a683ac1cfdd5fada8d3a061c3ac52aadfa7619e0ceed2e0851f9ce62fe4",
+  "archiveBytes": 283897518,
+  "url": "https://github.com/yjkira-01/monitor/releases/download/v0.3.2/web-resources.zip",
+  "targets": [
+    "artifacts",
+    "data/raw/GMDCSA24"
+  ],
+  "directories": [],
+  "files": [
+    {
+      "path": "artifacts/gmdcsa24_r3d18_100ep_inference.pt",
+      "bytes": 132751376,
+      "sha256": "8226e722fb9245af0976868e730ea0d00156f7c4472b554c4f915cd7a01349fd"
+    },
+    {
+      "path": "artifacts/care_video_active_inference.pt",
+      "bytes": 132751894,
+      "sha256": "7b53215ebb060fa65cf99352cf6324e1b93c6369576ba8057e384421cf917266"
+    },
+    {
+      "path": "artifacts/multifall_pose_tcn_stage_b_inference.pt",
+      "bytes": 798174,
+      "sha256": "b3602bdc118ae77461b66160b76455960bda95ef884ef563245f8c38af94cd61"
+    },
+    {
+      "path": "artifacts/pose_landmarker_full.task",
+      "bytes": 9398198,
+      "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+    },
+    {
+      "path": "artifacts/ssdlite320_mobilenet_v3_large_coco-a79551df.pth",
+      "bytes": 14069355,
+      "sha256": "a79551df90c79834bcd3bb3845ef9d966b5449a3a9b2833ae8404778ca5d65d2"
+    },
+    {
+      "path": "data/raw/GMDCSA24/Subject 4/Fall/01.mp4",
+      "bytes": 1714708,
+      "sha256": "be235fef9bda633f5f63ccbc28c1dbb6c0138728c5b1696d86f7a6e0c66f4516"
+    },
+    {
+      "path": "data/raw/GMDCSA24/Subject 4/ADL/01.mp4",
+      "bytes": 12882539,
+      "sha256": "820bbbb1189ee2fe176b453e3dc26b730cd9a22fe6b0a18b42410732513b8e43"
+    },
+    {
+      "path": "data/raw/GMDCSA24/LICENSE.txt",
+      "bytes": 1067,
+      "sha256": "ab15c1660a04e4f064151734856ad5be23af79552e45afe53dba5b857bcb310b"
+    }
+  ]
+}

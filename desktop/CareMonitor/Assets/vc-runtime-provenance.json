@@ -1,0 +1,47 @@
+{
+  "source": "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx",
+  "archive_sha256": "b56a9101f706f9d95f815f5b7fa6efbac972e86573d378b96a07cff5540c5961",
+  "files": [
+    {
+      "file": "concrt140.dll",
+      "bytes": 311736,
+      "sha256": "6926ddade5b6e67f1f8b2923d3cea8c2c49a0242144c02e05cc5dd0b42468b7d"
+    },
+    {
+      "file": "msvcp140.dll",
+      "bytes": 563232,
+      "sha256": "6fdc2c6fc1362c317ed65ae331dda329d4d03826feb8d79d635eaf8ba49764bc"
+    },
+    {
+      "file": "msvcp140_1.dll",
+      "bytes": 25536,
+      "sha256": "6284349a2262b2329aa75aa8559980f9b2775dc5ec3a9e9ecdf55648ac7f625a"
+    },
+    {
+      "file": "msvcp140_2.dll",
+      "bytes": 258088,
+      "sha256": "340e8e397ba46769d61384329ec611b7d96e1efb8de2f2d04941e3802a7db784"
+    },
+    {
+      "file": "msvcp140_atomic_wait.dll",
+      "bytes": 39968,
+      "sha256": "cfb61860c4949dee0d295b0156da77278dc676cc4dd820f71fd663c6390db070"
+    },
+    {
+      "file": "msvcp140_codecvt_ids.dll",
+      "bytes": 21424,
+      "sha256": "aa7f11d6b613705c561c6e2ec9cdbe61c339bb2380268da337593c37e1f39d89"
+    },
+    {
+      "file": "vcruntime140.dll",
+      "bytes": 109088,
+      "sha256": "d5a99b38807c3df803876ce5f1e71dc43cd7ac2c882582387e550941bc99cd00"
+    },
+    {
+      "file": "vcruntime140_1.dll",
+      "bytes": 39360,
+      "sha256": "68f948ea61695f85ff24d249077e312abb23267b3adc43679d35d781e9aa0244"
+    }
+  ],
+  "note": "Microsoft VC runtime; Microsoft license terms apply. App-local copies; no system installation."
+}

@@ -1,0 +1,78 @@
+{
+  "source": "https://github.com/arturbuszka/ByteTrack.NET",
+  "revision": "cc5965d8a14e06ca4f1a63f87423a09df06255ce",
+  "license": "MIT",
+  "files": [
+    {
+      "file": "LICENSE",
+      "sha256": "af7d8129b349cde4d9ce401d5a7d598103b2ca24627278a1fcd33a9a8918c940"
+    },
+    {
+      "file": "NOTICE",
+      "sha256": "7a03ca5d4dac97b0b6160c131c4621542b761e857d7cca6c71974ba686b58fc1"
+    },
+    {
+      "file": "README.md",
+      "sha256": "af13c762be4f1c7e6d9508c515ea811f7818d237efe4c4f19b8662d53b3e887e"
+    },
+    {
+      "file": "BaseTrack.cs",
+      "sha256": "7c577aa2e5745bacb48dd42b4dd2809ac1b42489175e9bf0d9f37515863883ff"
+    },
+    {
+      "file": "ByteTrack.csproj",
+      "sha256": "d4d4c4968e9a3519e540016611ddfc890f449001cb8e6334fb2fb14ae5be498f"
+    },
+    {
+      "file": "ByteTracker.cs",
+      "sha256": "ed5d6a4b7a5853d26fd99f90d030431077a6b2f140466acf4abdd6e0cbaf47f4"
+    },
+    {
+      "file": "ByteTrackerConfig.cs",
+      "sha256": "acbf9d9776f50c78670525a3c31b02465f676b3e7bb36d05e38360de974ea5c6"
+    },
+    {
+      "file": "Detection.cs",
+      "sha256": "2b6481dcd526db294ca33a4dab56fa94c7f9f24711405c7da61dc8a4852d7f2f"
+    },
+    {
+      "file": "KalmanFilter/IKalmanFilter.cs",
+      "sha256": "d15b525d907a405cce3235ee9730d5dab13e709f7916ca2e9bf14c69b02973a9"
+    },
+    {
+      "file": "KalmanFilter/KalmanFilter.cs",
+      "sha256": "2a72b46b9a21055609bc0c5f5628b9bb272cdf665ddfdfdc4ca23f98ae1c44f9"
+    },
+    {
+      "file": "LinearAlgebra/ILinearAlgebra.cs",
+      "sha256": "0fc2e615becb1a444431b1fb80b0290bed8513e1494253d188fe21532c25bab7"
+    },
+    {
+      "file": "LinearAlgebra/ManagedLinearAlgebra.cs",
+      "sha256": "597b18d56c99d2e13031ecb046c3088d042b48118ec02b58e5e3af961fe190ab"
+    },
+    {
+      "file": "Matching/Lapjv.cs",
+      "sha256": "1ddc6d72d03620510002056273bb9e5c9e7ed74774dcb36d0dd72a531e31ecf4"
+    },
+    {
+      "file": "Matching/Matching.cs",
+      "sha256": "6b6285c1d40e0b18951369ef5886f7f22638880f5ec92446d1a4a8b4c4f4caf0"
+    },
+    {
+      "file": "STrack.cs",
+      "sha256": "d5eca9e95658c3c5b803545c36fa48c53a8aa9cb27dc7d660960897548557bbe"
+    },
+    {
+      "file": "TrackState.cs",
+      "sha256": "7f5114fe41ed63a4d91c9f0ee199b9b7a8ac5f1e331f3c62bbc3ce302f634d24"
+    }
+  ],
+  "local_modifications": [
+    {
+      "file": "ByteTracker.cs",
+      "description": "Bound the removed-track list to the latest 256 entries to prevent unbounded memory growth.",
+      "sha256": "64595ae4449862c97da8a086ce7fbbc52175f18197d9192168d63fdd26c2d8bf"
+    }
+  ]
+}

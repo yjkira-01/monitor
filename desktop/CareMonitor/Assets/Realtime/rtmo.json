@@ -1,0 +1,18 @@
+{
+  "name": "RTMO-m body7 640x640",
+  "source": "https://download.openmmlab.com/mmpose/v1/projects/rtmo/onnx_sdk/rtmo-m_16xb16-600e_body7-640x640-39e78cc4_20231211.zip",
+  "sha256": "750d872151ff4652f02c738efc3a547e112ce9b688fe920bc17f948e8c3afdac",
+  "bytes": 89269977,
+  "license": "Apache-2.0",
+  "input": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "channel_order": "BGR",
+  "input_range": "0..255",
+  "resize": "preserve aspect, top-left pad 114",
+  "keypoints": 17,
+  "note": "Person detection and pose estimation, not a trained action classifier"
+}

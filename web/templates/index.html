@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CareSense · 康养监测台</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">✦</div><div><strong>CareSense</strong><span>智能康养监测</span></div></div>
+      <nav><a class="active" href="#overview">总览 <b>01</b></a><a href="#events">告警事件 <b id="nav-alerts">0</b></a><a href="#radar">雷达状态 <b>待接入</b></a></nav>
+      <div class="privacy"><span class="dot"></span><div><strong>隐私模式</strong><small>本地处理 · 不上传视频</small></div></div>
+    </aside>
+    <main class="content">
+      <header class="topbar"><div><p class="eyebrow">HOME MONITORING / 01</p><h1>居家监测总览</h1></div><div class="top-actions"><span class="live-pill"><i></i> LIVE</span><span id="clock">--:--:--</span></div></header>
+      <section class="hero" id="overview"><div><p class="eyebrow accent">实时视频流</p><h2>房间 01 <span id="connection" class="status-badge off">未连接</span></h2><p class="muted">视频流用于动作状态和跌倒风险初筛，雷达模块接入后会在同一时间轴补充生命体征。</p></div><div class="hero-meta"><span>数据保留 <strong>本地</strong></span><span>运行模式 <strong>边缘推理</strong></span></div></section>
+      <section class="grid-main">
+        <div class="video-card card"><div class="card-head"><div><span class="kicker">CAMERA 01</span><h3>实时画面</h3></div><span id="detector" class="tag">检测关闭</span></div><div class="video-wrap"><img src="/video_feed" alt="实时视频流"><div class="scanline"></div><span class="video-time" id="video-frames">0 frames</span></div></div>
+        <div class="card score-card"><div class="card-head"><div><span class="kicker">RISK SIGNAL</span><h3>风险信号</h3></div><span class="signal-icon">⌁</span></div><div class="score-ring"><div><strong id="score">0.00</strong><small>fall score</small></div></div><p class="score-note" id="score-note">等待视频帧…</p><div class="meter"><span id="meter"></span></div><div class="mini-row"><span>当前帧率</span><strong id="fps">0.0 FPS</strong></div><div class="mini-row"><span>告警次数</span><strong id="alerts">0</strong></div></div>
+      </section>
+      <section class="stats-grid"><div class="stat card"><span class="kicker">VITALS / RADAR</span><div class="stat-value">-- <small>BPM</small></div><p>心率 · 等待设备</p></div><div class="stat card"><span class="kicker">RESPIRATION</span><div class="stat-value">-- <small>次/分</small></div><p>呼吸率 · 等待设备</p></div><div class="stat card"><span class="kicker">SLEEP STATE</span><div class="stat-value warm">未接入</div><p>睡眠趋势将在雷达接入后显示</p></div><div class="stat card radar-card" id="radar"><span class="kicker">RADAR LINK</span><div class="radar-state"><i></i><strong>等待毫米波设备</strong></div><p>接口预留 · 不影响视频流运行</p></div></section>
+      <section class="bottom-grid"><div class="card event-card" id="events"><div class="card-head"><div><span class="kicker">EVENT LOG</span><h3>事件时间线</h3></div><span class="tag subtle">最近 30 条</span></div><div id="event-list" class="events"><div class="empty">尚无告警事件，系统持续观察中。</div></div></div><div class="card next-card"><span class="kicker">NEXT STEP</span><h3>设备接入准备</h3><p>视频链路已独立运行。毫米波设备到位后，只需补充串口/UDP 采集适配器，生命体征与睡眠卡片会沿用当前页面。</p><div class="progress"><span></span></div><div class="next-foot"><span>VIDEO PIPELINE</span><strong>READY</strong></div></div></section>
+      <footer>CareSense local console · prototype · no medical diagnosis</footer>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

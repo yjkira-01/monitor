@@ -1,0 +1,61 @@
+{
+  "scope": "Known development replays; weights unchanged; no new training or independent accuracy claim",
+  "protocol": "Actual native VideoService realtime replay, original 5s score plus corroborated 2s score",
+  "before_public14": {
+    "tp": 4,
+    "fn": 3,
+    "fp": 0,
+    "tn": 7
+  },
+  "after_public14": {
+    "tp": 6,
+    "fn": 1,
+    "fp": 0,
+    "tn": 7
+  },
+  "normal_activity20": {
+    "tp": 0,
+    "fn": 0,
+    "fp": 0,
+    "tn": 20
+  },
+  "overlap_note": "Six Subject4 normal videos occur in both batches; do not sum batch counts as independent videos.",
+  "all_final_rgb_complete": true,
+  "web_accuracy_measured": false,
+  "remaining_miss": "GMDCSA24 Subject4 Fall09",
+  "person_detection_limit": "Additional boxes occur on ADL05, ADL07, ADL10; no fall events in these normal replays.",
+  "tests": {
+    "backend": 67,
+    "resource_restore": 1,
+    "resource_download": 1,
+    "typescript": "passed",
+    "production_frontend": "passed"
+  },
+  "native_package": {
+    "passed": true,
+    "checks": 41,
+    "cpu": true,
+    "gpu": true,
+    "ui_navigation_pages": 8,
+    "short_window_details": true,
+    "playback_controls": true,
+    "idle_close": true
+  },
+  "web_browser": {
+    "passed": true,
+    "public_sample_only": true,
+    "actual_login": true,
+    "decoded_video": true,
+    "brand": true,
+    "people_status": true,
+    "avatar_removed": true,
+    "summary_plain_text": true,
+    "mobile_width": 390,
+    "uncaught_errors": [],
+    "cameras_opened": false,
+    "radar_opened": false,
+    "private_frames_saved": false,
+    "external_llm_called": false,
+    "screenshots_saved": false
+  }
+}

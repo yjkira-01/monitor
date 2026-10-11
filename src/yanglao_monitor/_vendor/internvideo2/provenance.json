@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/OpenGVLab/InternVideo",
+  "commit": "3965eef16e2dadd0ea6c8d0cc29c8a3039df52e3",
+  "license": "Apache-2.0",
+  "files": {
+    "internvideo2.py": {
+      "url": "https://raw.githubusercontent.com/OpenGVLab/InternVideo/3965eef16e2dadd0ea6c8d0cc29c8a3039df52e3/InternVideo2/single_modality/models/internvideo2.py",
+      "upstream_sha256": "206aff90e0ad25c92993191bd58deed91285299b58570f5d02695654816ad355",
+      "local_sha256": "e62cd4870ea2a74217a60935085a976cb4446f488a077f8e19a788787ecd842d"
+    },
+    "pos_embed.py": {
+      "url": "https://raw.githubusercontent.com/OpenGVLab/InternVideo/3965eef16e2dadd0ea6c8d0cc29c8a3039df52e3/InternVideo2/single_modality/models/pos_embed.py",
+      "upstream_sha256": "8f7be732699a80d42ac8b77bcbfa9e0a1fa18a35bef4850c2b0e4f1c87e10adf",
+      "local_sha256": "644013db5c91e15b1935d77bdd4c818d0590ac6612a33c9f3ca2e4fa60c6aafd"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/OpenGVLab/InternVideo/3965eef16e2dadd0ea6c8d0cc29c8a3039df52e3/LICENSE",
+      "upstream_sha256": "42182091dd722231018a04a0b950fcd068cbf18a535b64e06eb8b080499cb34c",
+      "local_sha256": "7ef6610e3f947b278c8625b5268984014b417282c48555387adef93531e75e84"
+    }
+  },
+  "patches": [
+    "Replace optional CUDA extension imports and timm helpers with installed torch/torchvision equivalents",
+    "Use PyTorch scaled_dot_product_attention with unchanged q/k RMS normalization",
+    "Use non-reentrant activation checkpointing",
+    "Preserve RMSNorm input dtype under FP32-parameter BF16 autocast"
+  ]
+}

@@ -1,0 +1,35 @@
+<UserControl x:Class="CareMonitor.Views.StereoPanel" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:v="clr-namespace:CareMonitor.Views">
+  <Grid>
+    <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="350"/></Grid.ColumnDefinitions>
+    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="2*"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+    <Border Grid.ColumnSpan="2" Background="White" Padding="16" Margin="0,0,0,14">
+      <StackPanel>
+        <WrapPanel><TextBlock Text="左相机" VerticalAlignment="Center" Margin="0,0,10,0"/><ComboBox x:Name="LeftChoice" Width="260" AutomationProperties.Name="双目左相机"/><TextBlock Text="右相机" VerticalAlignment="Center" Margin="16,0,10,0"/><ComboBox x:Name="RightChoice" Width="260" AutomationProperties.Name="双目右相机"/><Button Content="刷新设备" Click="Refresh" Style="{StaticResource Subtle}" Margin="10,0,0,0"/></WrapPanel>
+        <WrapPanel Margin="0,12,0,0"><Button Content="连接双摄像头" Click="Start" Style="{StaticResource Primary}"/><Button Content="断开双目" Click="Stop"/><Button Content="导入标定" Click="Import"/><Button Content="导出标定" Click="ExportCalibration"/><Button Content="导出定位" Click="Export" Style="{StaticResource Subtle}"/></WrapPanel>
+        <TextBlock x:Name="ConnectionText" Text="选择两台固定安装、画面重叠的摄像头" Foreground="#587362" Margin="0,6,0,0"/>
+      </StackPanel>
+    </Border>
+    <Grid Grid.Row="1" Margin="0,0,14,14"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+      <Grid Margin="0,0,7,0"><v:VideoView x:Name="LeftVideo"/><Border VerticalAlignment="Top" HorizontalAlignment="Left" Background="#ECF2EC" Padding="12,6"><TextBlock Text="左视角 · 主监测" Foreground="#28684D"/></Border></Grid>
+      <Grid Grid.Column="1" Margin="7,0,0,0"><v:VideoView x:Name="RightVideo"/><Border VerticalAlignment="Top" HorizontalAlignment="Left" Background="#ECF2EC" Padding="12,6"><TextBlock Text="右视角 · 辅助定位" Foreground="#28684D"/></Border></Grid>
+    </Grid>
+    <Grid Grid.Row="2" Margin="0,0,14,0"><v:StereoSceneView x:Name="Scene"/><TextBlock x:Name="PositionText" Margin="16" VerticalAlignment="Top" FontSize="12" Foreground="#28684D" Text="标定后显示三维位置与实测关节"/><TextBlock Text="拖动旋转 · 滚轮缩放 · 左相机为坐标原点" FontSize="10" Foreground="#587362" Margin="16" VerticalAlignment="Bottom"/></Grid>
+    <Border Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Background="White" Padding="18"><ScrollViewer VerticalScrollBarVisibility="Auto"><StackPanel>
+      <TextBlock Text="双目标定" FontSize="18" FontWeight="SemiBold"/>
+      <TextBlock Text="附带棋盘：10×7个方格 → 9×6个内角点，格长25mm。" Foreground="#28684D" FontSize="12" Margin="0,10,0,10"/>
+      <Button Content="1. 保存打印棋盘" Click="SaveChessboard" HorizontalAlignment="Left"/>
+      <TextBlock Text="A4横向、100%尺寸打印，贴在平整硬板上；用尺核对方格边长。" FontSize="11" Foreground="#66766D" Margin="0,6,0,14"/>
+      <TextBlock Text="2. 连接双摄，采集角点" FontWeight="SemiBold"/>
+      <TextBlock Text="让整个棋盘同时出现在两路画面中；保持静止，点击采集。每组改变位置、远近或倾斜角度。" FontSize="11" Foreground="#66766D" Margin="0,8,0,10"/>
+      <WrapPanel><Button x:Name="CaptureButton" IsEnabled="False" Content="采集一组角点" Click="Capture" Style="{StaticResource Primary}"/><Button Content="清空样本" Click="ClearSamples"/></WrapPanel>
+      <ProgressBar x:Name="SampleProgress" Minimum="0" Maximum="20" Height="7" Background="#E4EDE6" Foreground="#28684D" Margin="0,12,0,0"/>
+      <TextBlock x:Name="SampleCount" Text="已采集 0 / 建议20组（最少12组）" FontSize="11" Margin="0,8,0,12" Foreground="#28684D"/>
+      <TextBlock x:Name="CalibrationText" Text="尚未标定；两路可独立识别，暂不输出米制坐标。" Foreground="#587362" FontSize="11" Margin="0,0,0,14"/>
+      <Button x:Name="CalculateButton" IsEnabled="False" Content="3. 计算并保存标定" Click="Calibrate" Style="{StaticResource Primary}" HorizontalAlignment="Left"/>
+      <TextBlock Text="需覆盖左、右、上、下。成功后用上方“导出标定”备份；相机移动或分辨率改变后需重新标定。" FontSize="11" Foreground="#66766D" Margin="0,8,0,14"/>
+      <Expander Header="采集技巧与常见问题"><StackPanel Margin="0,8,0,12"><TextBlock Text="棋盘应占画面约1/4到1/2，避免反光、模糊或边缘被裁掉。每采一组，移动到新位置；左、右、上、下、近、远各取几组，并加入不同倾斜角度。" FontSize="11"/><TextBlock Text="未找到角点：确认两路都看到完整棋盘、内角点为9×6；对焦清晰后再采集。样本重复：换位置或距离。覆盖不足：补充画面左右及上下样本。" FontSize="11" Margin="0,8,0,0"/><TextBlock Text="无需事先导入文件。首次计算会自动保存；之后导入的是“导出标定”的JSON，不能使用“导出定位”文件。" FontSize="11" Margin="0,8,0,0"/></StackPanel></Expander>
+      <Expander Header="其他棋盘 · 高级参数"><StackPanel Margin="0,10,0,12"><TextBlock Text="填写方格交叉的内部角点数，不是黑白方格数。" FontSize="11" Foreground="#66766D"/><WrapPanel Margin="0,10,0,0"><TextBlock Text="内角点" VerticalAlignment="Center"/><TextBox x:Name="Columns" Text="9" Width="42" Margin="8,0,0,0"/><TextBlock Text=" × " VerticalAlignment="Center"/><TextBox x:Name="Rows" Text="6" Width="42"/><TextBlock Text="格长mm" VerticalAlignment="Center" Margin="10,0,6,0"/><TextBox x:Name="Square" Text="25" Width="48"/></WrapPanel><Button Content="恢复附带棋盘参数" Click="UseProvidedBoard" HorizontalAlignment="Left" Margin="0,10,0,0"/></StackPanel></Expander>
+      <TextBlock x:Name="PeopleText" FontSize="12" Margin="0,16,0,0" Foreground="#28684D"/>
+    </StackPanel></ScrollViewer></Border>
+  </Grid>
+</UserControl>

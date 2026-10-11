@@ -1,0 +1,19 @@
+Additional components in CareMonitor 0.2.0
+RTMO-m body7: OpenMMLab / MMPose official 640x640 ONNX, Apache-2.0.
+Source: https://github.com/open-mmlab/mmpose/tree/v1.3.2/projects/rtmo
+Official download and SHA256 in ../Realtime/rtmo.json. Weights unchanged. BGR raw-range preprocessing, output decoding and keypoint-based duplicate suppression implemented in C#.
+COCO pose AP does not establish fall accuracy. Posture and motion observations remain distinct from project-trained R3D scores.
+RF-DETR Medium: Roboflow/rf-detr-medium, revision 1b5b672408f86dd38e05dd3cf3f2e0834e545a59; Apache-2.0.
+Source: https://huggingface.co/Roboflow/rf-detr-medium
+Official weights converted through the Transformers implementation to ONNX; fixed 576 input, person filtering and box scale 320. No retraining.
+RTMPose-l body7: OpenMMLab / MMPose official 256x192 ONNX, Apache-2.0.
+Source: https://github.com/open-mmlab/mmpose/tree/v1.3.2/projects/rtmpose
+Official download and SHA256 in ../Realtime/rtmpose.json. No modifications to the model weights; C# preprocessing and SimCC decoding are implemented locally.
+ByteTrack.NET: MIT; fixed revision, original copyright/license, and local modification in ByteTrack/provenance.json.
+Source: https://github.com/arturbuszka/ByteTrack.NET
+Local modification: retained removed-track list capped at 256. The original NOTICE records the C# port and original ByteTrack authors.
+R3D-18 and SSD: torchvision, BSD-3-Clause; project-trained binary weights. Existing notices apply.
+Source: https://github.com/pytorch/vision
+Model exports include preprocessing and are recorded by SHA256 in adjacent manifests.
+YOLO fall and VideoMAE fall research candidates are NOT distributed in this application.
+Full additional Apache license: APACHE-2.0.txt. Original MIT tracker notices: ByteTrack/LICENSE and ByteTrack/NOTICE.

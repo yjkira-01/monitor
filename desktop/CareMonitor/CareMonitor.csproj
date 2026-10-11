@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks><AssemblyName>CareMonitor</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest><Version>0.3.2</Version>
+    <ApplicationIcon>Assets/AppIcon.ico</ApplicationIcon>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.OnnxRuntime.DirectML" Version="1.20.1" />
+    <PackageReference Include="OpenCvSharp4" Version="4.10.0.20241108" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.10.0.20241108" />
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="8.0.0" />
+    <ProjectReference Include="../ByteTrack/ByteTrack.csproj" />
+    <Content Include="Assets/**" Exclude="Assets/Preview/**;Assets/Realtime/actions.onnx;Assets/Realtime/actions.json;Assets/care-human.glb;Assets/avatar-provenance.json;Assets/QUATERNIUS-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Update="Assets/Realtime/people.onnx;Assets/Realtime/rtmpose.onnx;Assets/Realtime/rtmpose.json" CopyToPublishDirectory="Never" />
+    <Content Include="../ByteTrack/LICENSE;../ByteTrack/NOTICE;../ByteTrack/provenance.json" Link="Assets/Notices/ByteTrack/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="Runtime/*.dll" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

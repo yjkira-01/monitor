@@ -1,0 +1,94 @@
+{
+  "video": {
+    "sha256": "5ad159a3547d0e75b095bf402afd381a4ebbfbed19bdbce7e9797115a0476548",
+    "bytes": 132666465,
+    "max_errors": [
+      2.7939677238464355e-08,
+      1.9073486328125e-06,
+      2.384185791015625e-07
+    ],
+    "input": [
+      1,
+      16,
+      128,
+      171,
+      3
+    ],
+    "outputs": [
+      "probabilities",
+      "embedding",
+      "attention"
+    ],
+    "classes": [
+      "adl",
+      "fall"
+    ],
+    "revision": "care_video_active_inference",
+    "read_size": [
+      171,
+      128
+    ],
+    "low_light_trained": true,
+    "partial_body_trained": true,
+    "acceptance": "existing_runtime_baseline",
+    "clinical_validated": false,
+    "source_sha256": "7b53215ebb060fa65cf99352cf6324e1b93c6369576ba8057e384421cf917266"
+  },
+  "pose_tcn": {
+    "sha256": "9e863e063ff55ff60bc804fbbf1c1f637468821140dbed600dda277ac6b902ee",
+    "bytes": 805680,
+    "max_errors": [
+      1.5497207641601562e-06
+    ],
+    "input": [
+      1,
+      169,
+      48
+    ],
+    "outputs": [
+      "logits"
+    ],
+    "classes": [
+      "adl",
+      "fall"
+    ],
+    "clip_len": 48,
+    "preprocessing": "pose_xy_visibility_body_relative_v1"
+  },
+  "people": {
+    "sha256": "8e33f2d32592918b2274a12209a80adcdebaab6b21fbc7f9eca168390dc6a72b",
+    "input": [
+      1,
+      3,
+      576,
+      576
+    ],
+    "source": "RF-DETR Medium",
+    "box_scale": 320
+  },
+  "landmarks": {
+    "sha256": "ae17ee8f076a5bbc28f65b939f46139c10f10c51ec4392a011e56d06d3f76c5d",
+    "source": "https://huggingface.co/unity/inference-engine-blaze-pose",
+    "license": "Apache-2.0",
+    "joints": 33,
+    "outputs_include_auxiliary_joints": true,
+    "preprocessing": "square_body_roi_rgb_float_0_1"
+  },
+  "note": "Realtime profile: RF-DETR and RTMPose; existing R3D checkpoint retained as a comparison.",
+  "rtmpose": {
+    "name": "RTMPose-l body7 256x192",
+    "source": "https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/onnx_sdk/rtmpose-l_simcc-body7_pt-body7_420e-256x192-4dba18fc_20230504.zip",
+    "sha256": "cff059fd58a2c0d5fabaddcd66a96abcfb327563bcb0149ea59c9de4a8990fe2",
+    "bytes": 110596989,
+    "input": [
+      1,
+      3,
+      256,
+      192
+    ],
+    "keypoints": 17,
+    "split_ratio": 2.0,
+    "license": "Apache-2.0",
+    "benchmark": "COCO pose AP; not fall accuracy"
+  }
+}

@@ -1,0 +1,5 @@
+# 正式后端运行依赖
+-r backend/requirements.txt
+
+# 边缘视觉、雷达模型训练等较重依赖按需安装
+# -r backend/requirements-ml.txt

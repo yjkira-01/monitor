@@ -1,0 +1,12 @@
+{
+  "author": "Quaternius",
+  "pack": "Universal Base Characters — Standard / Superhero Male",
+  "license": "CC0-1.0",
+  "official_pack": "https://quaternius.com/packs/universalbasecharacters.html",
+  "repacked_source": "https://github.com/programasweights/avatar/blob/main/public/assets/character.glb",
+  "asset": "care-human.glb",
+  "bytes": 741320,
+  "sha256": "d6f3b64cab629f6ddca9ba063811aeffd3663a8a4e49ade47cd9505dc2bbd70f",
+  "upstream_changes": "Single GLB; original mesh/skin/bones; texture images removed and matte jade material.",
+  "runtime_changes": "Measured joint direction retargeting, medical green material, One Euro pose filtering; no pre-recorded animation."
+}

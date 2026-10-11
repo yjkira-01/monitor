@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>CareMonitor.Bootstrap</AssemblyName>
+    <Version>0.3.2</Version>
+    <Product>青禾 · 康养监测</Product>
+    <Description>康养监测桌面应用，内嵌完整运行资源</Description>
+    <ApplicationIcon>../CareMonitor/Assets/AppIcon.ico</ApplicationIcon>
+    <ApplicationManifest>../CareMonitor/app.manifest</ApplicationManifest>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishTrimmed>false</PublishTrimmed>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(PayloadArchive)" LogicalName="CareMonitor.Payload.zip" Condition="'$(PayloadArchive)' != ''" />
+    <EmbeddedResource Include="$(PayloadManifest)" LogicalName="CareMonitor.Payload.json" Condition="'$(PayloadManifest)' != ''" />
+  </ItemGroup>
+  <Target Name="RequirePayload" BeforeTargets="PrepareForBuild">
+    <Error Condition="!Exists('$(PayloadArchive)') Or !Exists('$(PayloadManifest)')" Text="请通过 desktop/publish.ps1 生成并嵌入完整应用资源。" />
+  </Target>
+</Project>

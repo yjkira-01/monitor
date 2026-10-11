@@ -1,0 +1,87 @@
+{
+  "video": {
+    "sha256": "5ad159a3547d0e75b095bf402afd381a4ebbfbed19bdbce7e9797115a0476548",
+    "bytes": 132666465,
+    "max_errors": [
+      2.7939677238464355e-08,
+      1.9073486328125e-06,
+      2.384185791015625e-07
+    ],
+    "input": [
+      1,
+      16,
+      128,
+      171,
+      3
+    ],
+    "outputs": [
+      "probabilities",
+      "embedding",
+      "attention"
+    ],
+    "classes": [
+      "adl",
+      "fall"
+    ],
+    "revision": "care_video_active_inference",
+    "read_size": [
+      171,
+      128
+    ],
+    "low_light_trained": true,
+    "partial_body_trained": true,
+    "acceptance": "existing_runtime_baseline",
+    "clinical_validated": false,
+    "source_sha256": "7b53215ebb060fa65cf99352cf6324e1b93c6369576ba8057e384421cf917266"
+  },
+  "pose_tcn": {
+    "sha256": "9e863e063ff55ff60bc804fbbf1c1f637468821140dbed600dda277ac6b902ee",
+    "bytes": 805680,
+    "max_errors": [
+      1.5497207641601562e-06
+    ],
+    "input": [
+      1,
+      169,
+      48
+    ],
+    "outputs": [
+      "logits"
+    ],
+    "classes": [
+      "adl",
+      "fall"
+    ],
+    "clip_len": 48,
+    "preprocessing": "pose_xy_visibility_body_relative_v1"
+  },
+  "people": {
+    "sha256": "98f113cb17fc2eac9c8155f4bdeadc0e41ec7eef73dcc015a1b78a838a4a5ffa",
+    "bytes": 14161107,
+    "max_errors": [
+      6.866455078125e-05,
+      2.644956111907959e-07,
+      0.0
+    ],
+    "input": [
+      1,
+      3,
+      320,
+      320
+    ],
+    "outputs": [
+      "boxes",
+      "scores",
+      "labels"
+    ]
+  },
+  "landmarks": {
+    "sha256": "ae17ee8f076a5bbc28f65b939f46139c10f10c51ec4392a011e56d06d3f76c5d",
+    "source": "https://huggingface.co/unity/inference-engine-blaze-pose",
+    "license": "Apache-2.0",
+    "joints": 33,
+    "outputs_include_auxiliary_joints": true,
+    "preprocessing": "square_body_roi_rgb_float_0_1"
+  },
+  "note": "Export parity is numerical equivalence, not real-scene accuracy validation."
+}
