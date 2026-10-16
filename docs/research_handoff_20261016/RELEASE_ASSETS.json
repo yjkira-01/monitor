@@ -90,6 +90,11 @@
       "filename": "dataset_release.zip",
       "bytes": 680028517,
       "sha256": "4f603af77cd16c5da0eba30fbc33bfa19101d7fea7ba3bbba5ed6789a77f83c0"
+    },
+    {
+      "filename": "verify_downloads.py",
+      "bytes": 1404,
+      "sha256": "4f921af74da0c8e84e9f6594e31ddf876a4f898375c31dfab6fffa299c2e3aaf"
     }
   ],
   "repository": "yjkira-01/monitor",

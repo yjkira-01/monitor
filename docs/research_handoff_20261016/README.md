@@ -30,3 +30,5 @@
 数字来源：[全方法CSV](large_protocol_all_methods.csv)、[独立指标复算](independent_metric_verification.json)。文档经Word原生渲染检查，图表按单图PNG/PDF/SVG导出；实验相关授权与第三方许可分别保留。
 
 原research笔记保留历史判断，遇到状态/结论变化请以本说明和Release的完整正式报告为准。
+
+下载后可运行 [verify_downloads.py](verify_downloads.py) 校验已下载文件；加 `--all` 要求完整资料全部存在。该工具只读文件，不删除或修改数据。
