@@ -1,0 +1,100 @@
+{
+  "archives": [
+    {
+      "stem": "paper-writing-kit-20261016",
+      "parts": [
+        "paper-writing-kit-20261016.zip"
+      ],
+      "assets": [
+        {
+          "filename": "paper-writing-kit-20261016.zip",
+          "bytes": 138821018,
+          "sha256": "ac69863f49bdb44f1f928807cc024d75fabb2d066d29f3c866c1a17b21921eb7"
+        }
+      ],
+      "combined_sha256": "ac69863f49bdb44f1f928807cc024d75fabb2d066d29f3c866c1a17b21921eb7",
+      "zip_crc": "passed",
+      "files": 1225
+    },
+    {
+      "stem": "research-reproduction-20261016",
+      "parts": [
+        "research-reproduction-20261016.zip.001",
+        "research-reproduction-20261016.zip.002"
+      ],
+      "assets": [
+        {
+          "filename": "research-reproduction-20261016.zip.001",
+          "bytes": 1073741824,
+          "sha256": "39afff55fe1798ff3bc7a2ae1ca8c3b5e69af79c2ff5b9f109f47bcf7ef37a1e"
+        },
+        {
+          "filename": "research-reproduction-20261016.zip.002",
+          "bytes": 461503466,
+          "sha256": "3d932a0e318e8f39084110b607810a40b7ad25800e9f7a373cf3e9467d8bd139"
+        }
+      ],
+      "combined_sha256": "99790f71c5010146855d3f36c74a13dda16241c15ccb89a62047bf5fff4c9098",
+      "zip_crc": "passed",
+      "files": 603
+    },
+    {
+      "stem": "research-history-20261016",
+      "parts": [
+        "research-history-20261016.zip.001",
+        "research-history-20261016.zip.002",
+        "research-history-20261016.zip.003",
+        "research-history-20261016.zip.004",
+        "research-history-20261016.zip.005",
+        "research-history-20261016.zip.006"
+      ],
+      "assets": [
+        {
+          "filename": "research-history-20261016.zip.001",
+          "bytes": 1073741824,
+          "sha256": "de6e0a62945c16f8d866105da3948ef12291ba1ae293e547a8359f03d0c6a5b7"
+        },
+        {
+          "filename": "research-history-20261016.zip.002",
+          "bytes": 1073741824,
+          "sha256": "ae2d02050763a323fcf50fb8fcccf0cbe249d650dfb3ea214811a3ffce2927d4"
+        },
+        {
+          "filename": "research-history-20261016.zip.003",
+          "bytes": 1073741824,
+          "sha256": "8e55dd10917dd3bb272b4584b173848ad0779bf4ec7269e61cfa8c02c5ed6fcd"
+        },
+        {
+          "filename": "research-history-20261016.zip.004",
+          "bytes": 1073741824,
+          "sha256": "752ef382177a4f403d0c5375330888ab633c97569a7c304a443983500cb74ebe"
+        },
+        {
+          "filename": "research-history-20261016.zip.005",
+          "bytes": 1073741824,
+          "sha256": "3e3d481186dc522f93668583eb3384a485edd244c73415d196b001b19d144c38"
+        },
+        {
+          "filename": "research-history-20261016.zip.006",
+          "bytes": 308046980,
+          "sha256": "ae603a6076c839ef3114a91b78335450851b973c294fc177b5399b5ae58e6e5c"
+        }
+      ],
+      "combined_sha256": "c9ba82480deabd19c7a66a0188bb6148d4f2e9168a8d05d5d0f7a2b47458bc8f",
+      "zip_crc": "passed",
+      "files": 374
+    }
+  ],
+  "additional_assets": [
+    {
+      "filename": "dataset_release.zip",
+      "bytes": 680028517,
+      "sha256": "4f603af77cd16c5da0eba30fbc33bfa19101d7fea7ba3bbba5ed6789a77f83c0"
+    }
+  ],
+  "repository": "yjkira-01/monitor",
+  "tag": "research-handoff-20261016",
+  "all_zip_crc": "passed",
+  "file_count": 2202,
+  "raw_video": "Official Dryad recovery source in DATA_SOURCES.json"
+}

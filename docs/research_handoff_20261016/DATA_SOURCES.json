@@ -1,0 +1,22 @@
+{
+  "dataset_doi": "10.5061/dryad.9ghx3ffpp",
+  "license": "CC0-1.0",
+  "metadata_source": "artifacts/research_execution_20261012/zenodo_mri.json",
+  "files": [
+    {
+      "filename": "blurred_videos.zip",
+      "bytes": 14988106753,
+      "sha256": "1a95d3993d564ba028aa7f7f53c1a23ac35edd4f7196a951399529738873149e",
+      "official_url": "https://datadryad.org/api/v2/files/2738861/download",
+      "included_in_release": false
+    },
+    {
+      "filename": "dataset_release.zip",
+      "bytes": 680028517,
+      "sha256": "4f603af77cd16c5da0eba30fbc33bfa19101d7fea7ba3bbba5ed6789a77f83c0",
+      "official_url": "https://datadryad.org/api/v2/files/2738858/download",
+      "included_in_release": true
+    }
+  ],
+  "raw_video_mirror": "Official source; experimental caches are included, not a second 15GB video mirror."
+}

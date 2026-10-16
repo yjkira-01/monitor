@@ -75,3 +75,8 @@ npm run build
 桌面编译需要.NET 8 SDK。模型与原生运行资源不进入Git历史：可先下载并运行正式EXE释放资源，将Runtime版本目录里的 `Assets` 和项目需要的运行库复制到开发工程对应位置；也可使用 `scripts/prepare_open_source_models.py`、`scripts/export_binary_fall.py`、`scripts/export_desktop_models.py` 和 `scripts/prepare_desktop_runtime.py` 从已记录来源准备。随后 `dotnet build desktop/CareMonitor/CareMonitor.csproj -c Release`，或执行 `desktop/publish.ps1` 生成新的内嵌包。已有本机离线NuGet源时会复用，其他环境使用标准NuGet恢复。
 
 代码沿用本仓库Apache-2.0许可；第三方代码、模型、数据与图标的独立许可保留在通知文件中。Git仓库不含训练原始数据、私人视频、用户数据库、密钥、云端凭据、历史安装包或本地实验记忆。运行资源通过版本化Release交付。
+
+
+## 人体姿态融合论文研究交接
+
+[2026-10-16 科研交接入口](docs/research_handoff_20261016/README.md)：包含算法、完整开发结果、同观测公平对照、论文材料和复现包。资料下载见独立科研Release，原应用发布继续保留。

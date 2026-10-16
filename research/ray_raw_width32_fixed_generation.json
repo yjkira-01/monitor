@@ -1,0 +1,10 @@
+{
+  "status": "registered_before_training",
+  "question": "Does the raw-control hidden22 bottleneck explain the geometric hidden32 advantage?",
+  "control": "raw input29 + embedding16 -> hidden32 -> output3; 1843 parameters",
+  "fixed": "Same OOF data, depth estimates, seeds, order, optimizer, 80 epochs, output cap, eligibility.",
+  "analysis": "Three-seed clean and five-condition subject-macro S, all four subjects; no selection by validation.",
+  "source_sha256": "2416facaabbcb7046a20efcb99d98fd7123e0ddf6d5534b7830c9c1a54e3bf13",
+  "generated_sha256": "4003ed5088d2b6033b0e0217e1bf20b6ed08f8e6515facfd682c9395330adfac",
+  "test_subjects_used": []
+}

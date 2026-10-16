@@ -1,0 +1,17 @@
+{
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0",
+    "numpy": "2.3.4",
+    "onnxruntime-gpu": "1.25.1",
+    "opencv-python": "4.13.0.92",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.7",
+    "PyYAML": "6.0.3",
+    "einops": "0.8.1",
+    "python-docx": "1.2.0"
+  },
+  "hardware": "RTX4060 Laptop 8GB",
+  "floating_point": "IEEE FP32; deterministic settings in each source"
+}

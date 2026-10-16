@@ -1,0 +1,160 @@
+{
+  "population": 12288,
+  "train_frames": 9216,
+  "validation_frames": 3072,
+  "folds": [
+    0
+  ],
+  "seeds": [
+    7,
+    17,
+    27
+  ],
+  "test_subjects_used": [],
+  "records": [
+    {
+      "method": "anchor_hold",
+      "description": "anchor_hold",
+      "clean_mean_mm": 63.49887140525189,
+      "clean_initialization_sd_mm": 1.256586002234744,
+      "S_mean_mm": 83.12348684941688,
+      "S_initialization_sd_mm": 0.35853630228700595
+    },
+    {
+      "method": "anchor_no_motion_loss",
+      "description": "anchor_no_motion_loss",
+      "clean_mean_mm": 63.54853273320629,
+      "clean_initialization_sd_mm": 1.2590719187026862,
+      "S_mean_mm": 83.16307128383127,
+      "S_initialization_sd_mm": 0.35952188303766547
+    },
+    {
+      "method": "anchor_transport",
+      "description": "anchor_transport",
+      "clean_mean_mm": 63.54705036834694,
+      "clean_initialization_sd_mm": 1.2611541204291499,
+      "S_mean_mm": 83.16373150752457,
+      "S_initialization_sd_mm": 0.3791501939805061
+    },
+    {
+      "method": "awc_concat",
+      "description": "AWC论文训练规则适配",
+      "clean_mean_mm": 64.41109006137862,
+      "clean_initialization_sd_mm": 0.45497032444398583,
+      "S_mean_mm": 85.27059073768622,
+      "S_initialization_sd_mm": 0.7563733623848061
+    },
+    {
+      "method": "concat",
+      "description": "concat",
+      "clean_mean_mm": 63.76089435541561,
+      "clean_initialization_sd_mm": 1.2534945955192065,
+      "S_mean_mm": 83.90227251846711,
+      "S_initialization_sd_mm": 0.354319467112833
+    },
+    {
+      "method": "concat_mpjpe",
+      "description": "concat_mpjpe",
+      "clean_mean_mm": 63.845256599763474,
+      "clean_initialization_sd_mm": 0.656916432975685,
+      "S_mean_mm": 84.12008973959213,
+      "S_initialization_sd_mm": 0.46351252029804507
+    },
+    {
+      "method": "concat_mse",
+      "description": "concat_mse",
+      "clean_mean_mm": 81.6878558508907,
+      "clean_initialization_sd_mm": 2.005117938030749,
+      "S_mean_mm": 99.45664058412139,
+      "S_initialization_sd_mm": 1.5392728153852173
+    },
+    {
+      "method": "constant_ray_gate",
+      "description": "常深度几何门控",
+      "clean_mean_mm": 59.4753502879337,
+      "clean_initialization_sd_mm": 1.2413150402103692,
+      "S_mean_mm": 81.63525741968053,
+      "S_initialization_sd_mm": 0.25792324557583984
+    },
+    {
+      "method": "free_constant_residual",
+      "description": "常深度自由残差",
+      "clean_mean_mm": 60.175893401894854,
+      "clean_initialization_sd_mm": 0.575147240543303,
+      "S_mean_mm": 81.6932176824228,
+      "S_initialization_sd_mm": 0.5015426945588143
+    },
+    {
+      "method": "free_no_ray_residual",
+      "description": "无射线自由残差",
+      "clean_mean_mm": 64.63358210531878,
+      "clean_initialization_sd_mm": 0.9382039467081471,
+      "S_mean_mm": 84.1592313403187,
+      "S_initialization_sd_mm": 0.31397769250060065
+    },
+    {
+      "method": "free_radar_residual",
+      "description": "雷达几何自由残差",
+      "clean_mean_mm": 60.20212143116652,
+      "clean_initialization_sd_mm": 0.6329015575395033,
+      "S_mean_mm": 81.56088111645686,
+      "S_initialization_sd_mm": 0.396627857584828
+    },
+    {
+      "method": "gru",
+      "description": "GRU（9帧）",
+      "clean_mean_mm": 61.66936516621249,
+      "clean_initialization_sd_mm": 1.680981839228087,
+      "S_mean_mm": 79.7126443293388,
+      "S_initialization_sd_mm": 0.5685752535704939
+    },
+    {
+      "method": "radar_ray_gate",
+      "description": "雷达深度几何门控",
+      "clean_mean_mm": 59.23476615896164,
+      "clean_initialization_sd_mm": 0.9843025194746253,
+      "S_mean_mm": 81.54748128040265,
+      "S_initialization_sd_mm": 0.3658192085846199
+    },
+    {
+      "method": "radar_single",
+      "description": "radar_single",
+      "clean_mean_mm": 109.31587627603987,
+      "clean_initialization_sd_mm": 1.9037802320871506,
+      "S_mean_mm": 116.59818648894638,
+      "S_initialization_sd_mm": 1.5774230603125832
+    },
+    {
+      "method": "recentered_concat",
+      "description": "强拼接，髋重中心",
+      "clean_mean_mm": 63.760876537220376,
+      "clean_initialization_sd_mm": 1.2534802064071244,
+      "S_mean_mm": 83.90222596820225,
+      "S_initialization_sd_mm": 0.3542950902943559
+    },
+    {
+      "method": "rgb_single",
+      "description": "rgb_single",
+      "clean_mean_mm": 70.88272757128895,
+      "clean_initialization_sd_mm": 0.5940769886286,
+      "S_mean_mm": 99.57299669364507,
+      "S_initialization_sd_mm": 0.37438784726397845
+    },
+    {
+      "method": "temporal_mlp",
+      "description": "时序MLP（9帧）",
+      "clean_mean_mm": 62.313636201356935,
+      "clean_initialization_sd_mm": 1.3024044308807385,
+      "S_mean_mm": 80.59755230004511,
+      "S_initialization_sd_mm": 0.47561011297512895
+    },
+    {
+      "method": "raw_observations",
+      "description": "相同观测神经网络（1843参数）",
+      "clean_mean_mm": 60.123830715604555,
+      "clean_initialization_sd_mm": 0.4055115548522709,
+      "S_mean_mm": 81.43905989426766,
+      "S_initialization_sd_mm": 0.34807384691449494
+    }
+  ]
+}

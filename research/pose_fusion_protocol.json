@@ -1,0 +1,222 @@
+{
+  "status": "Three-initialization-seed, single-split point-fusion development controls complete; paired radar is useful, temporal contribution remains conditional; no formal test",
+  "task": "single-person root-relative 17-joint pose fusion",
+  "coordinate_units": "mm",
+  "time_units": "seconds",
+  "initialization_seeds": [
+    7,
+    17,
+    27
+  ],
+  "common_grid_hz": 10,
+  "alignment_offsets_ms": [
+    -500,
+    -400,
+    -300,
+    -200,
+    -100,
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+  ],
+  "test_offsets_ms": [
+    -500,
+    -200,
+    0,
+    200,
+    500
+  ],
+  "quality_conditions": [
+    "clean",
+    "video_degraded",
+    "radar_degraded"
+  ],
+  "main_metric": "MPJPE_mm",
+  "primary_hypothesis": "lower MPJPE than MAP alignment plus matched quality gate under joint misalignment and degradation",
+  "splits": [
+    {
+      "seed": 7,
+      "canonical_ids_train": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "canonical_ids_validation": [
+        5,
+        6,
+        19,
+        20
+      ],
+      "canonical_ids_test": [
+        3,
+        10,
+        12,
+        18
+      ]
+    },
+    {
+      "seed": 17,
+      "canonical_ids_train": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        15,
+        17,
+        18,
+        19
+      ],
+      "canonical_ids_validation": [
+        1,
+        2,
+        14,
+        16
+      ],
+      "canonical_ids_test": [
+        3,
+        11,
+        12,
+        20
+      ]
+    },
+    {
+      "seed": 27,
+      "canonical_ids_train": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        12,
+        13,
+        16,
+        17,
+        19
+      ],
+      "canonical_ids_validation": [
+        2,
+        6,
+        15,
+        20
+      ],
+      "canonical_ids_test": [
+        8,
+        11,
+        14,
+        18
+      ]
+    }
+  ],
+  "release_gate": {
+    "raw_rgb_decoded": true,
+    "radar_records_decoded": true,
+    "timestamp_mapping_audited": true,
+    "label_units_audited": true,
+    "no_test_subject_pretraining_exposure_audited": false,
+    "physical_sync_verified": false,
+    "geometric_projection_verified": true
+  },
+  "observed_subject_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "native_sampling": "Use published millisecond timestamps; never frame_index/10",
+  "development_models_from_scratch": true,
+  "rgb_decode_scope": {
+    "subjects": [
+      1,
+      2,
+      4,
+      7,
+      8,
+      9,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      5,
+      6,
+      19,
+      20
+    ],
+    "frames_per_subject": 64,
+    "different_selected_frames": 1024,
+    "conditions": [
+      "clean",
+      "dark_pixel_multiplier_0.18"
+    ],
+    "all_40_videos_fully_decoded": false,
+    "independent_physical_sync_truth": false
+  },
+  "coordinate_convention_audit": {
+    "video_to_published_2d": "undo horizontal reflection; color0 -> pose_2d_r/cam1, color1 -> pose_2d_l/cam2",
+    "published_gt_to_calibration": "(-1000*x, -1000*y, 1000*z)",
+    "scope": "16 development subjects, 64 screened frames each; projection convention, not new calibration or physical accuracy"
+  },
+  "development_decision": {
+    "current_ridge_fusion_gain_clean_mm": 0.306092065320557,
+    "next": "Expand frozen development sample and missing-modality/realistic-degradation baselines; assess simple alignment and restoration on continuous high-motion samples before A+B network",
+    "formal_test_evaluation_started": false,
+    "prior_ridge_injected_lag_oracle_gain_mm_range": [
+      -0.18508772278080698,
+      0.3663933698730233
+    ],
+    "point_control_validation": {
+      "report": "point_validation_progress_20261013.md",
+      "artifact": "../artifacts/research_validation_20261013/run_summary.json",
+      "initialization_seeds": [
+        7,
+        17,
+        27
+      ],
+      "subject_splits_evaluated": 1,
+      "fusion_clean_mean_MPJPE_mm": 66.14442390147119,
+      "capacity_matched_RGB_clean_mean_MPJPE_mm": 72.5282736811454,
+      "shuffled_training_fusion_clean_mean_MPJPE_mm": 70.2352313039623,
+      "known_injected_restoration_gain_range_mm": [
+        0.5839152008385989,
+        2.4564071916373016
+      ],
+      "learned_correspondence_or_variance_model_trained": false,
+      "interpretation": "Current small development controls support point-cloud complementarity; do not establish proposed-method novelty or formal-test performance"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "base_source_sha256": "ab2483a7087293b39c445cd378a342dde2697ebdbae5111bb438e257d358e3c6",
+  "generated_sha256": "89afbbc83dbef85cdb772c0a99e83f7637828e7e2e8e66e7de1226aec079be26",
+  "changes": "Large audited cache, robust common OOF objective/template, three actual pixel conditions, source base from audited large fold0; add same-capacity free constant-ray control; no final-test data"
+}

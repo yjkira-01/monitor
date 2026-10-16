@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "Word_pages": 4,
+  "OOXML_validation": "all validations passed",
+  "visual_review": "Final four-page contact sheet inspected; formulas, two separate figures and tables readable; no clipped or orphan final page",
+  "docx_sha256": "b669f5a41a480b79502c0a6d27f798cb77b0a5de95a0d5cc9b3a61400d2d1493",
+  "pdf_sha256": "8031fe8667aaf0845910e34e8ea10cbac5c59fe31724220be7080e8e47ce695a",
+  "native_OMML_count": 18
+}

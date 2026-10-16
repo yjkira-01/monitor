@@ -1,0 +1,7 @@
+{
+  "source_sha256": "511a7a43bad4094bf26d25c60cbfce7df59d63c4117ea1b0f998fc327c33b5c3",
+  "formal_sha256": "a0c77833a9eba6f7498aec29c5c1d79651c026b7f59832033e92600a84d1ee8a",
+  "preflight_sha256": "3832a3c2001d9bb7c573bc2ab9e687d8388546a190584ddd92be9f0cbedff42c",
+  "amendment_reason": "Physically impossible released finite targets found before formal training; same robust loss and median template for all primary methods; original MSE retained as control",
+  "comparative_scores_used": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "registered_before_large_control_training",
+  "question": "Does explicit geometry improve the larger action-window population against the stronger same-observation same-width neural control?",
+  "population": "Exact audited 12288 development frames, same fold0 and 3 initialization seeds as main experiment.",
+  "control": "hidden32, embedding16, 1843 parameters, 80ep, same OOF payloads/targets/optimizer/cap/mask; no hyperparameter search.",
+  "prerequisite": "Parent main and geometric pipeline complete, including independent audits.",
+  "test_subjects_used": [],
+  "generated": [
+    {
+      "source": "run_ray_raw_width32_control_fixed_20261016.py",
+      "source_sha256": "4003ed5088d2b6033b0e0217e1bf20b6ed08f8e6515facfd682c9395330adfac",
+      "generated": "run_ray_raw_action_window_control_20261016.py",
+      "sha256": "c83e897be65d93fbb2f5ab825596701b8fcc61b9302d3311465a75b42b8b4223"
+    },
+    {
+      "source": "audit_report_ray_raw_control.py",
+      "source_sha256": "f3109bd006d936b06e4e9f9c37c2606e98cd995df01d3b4b7366bbab64d18eeb",
+      "generated": "audit_report_ray_raw_action_window_control_20261016.py",
+      "sha256": "b059da885c80df437a5c1876309ed28b88a8bbeb776e10949a31178fd1c1b654"
+    }
+  ]
+}
